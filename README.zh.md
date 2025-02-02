@@ -2,7 +2,7 @@
 
 <div align="center">
   
-![Thorium Browser](https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&q=80&w=1200)
+![Thorium Browser](https://github.com/user-attachments/assets/974bc85e-926f-4069-9fa7-2de2d55c3620)
 
 <p align="center">
   <a href="README.md">English</a> •
