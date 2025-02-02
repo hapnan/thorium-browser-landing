@@ -2,8 +2,7 @@
 
 <div align="center">
   
-![Thorium Browser](https://github.com/user-attachments/assets/e23a53a7-80e6-4c77-8d81-d90c9ea11607)
-
+![english_main](https://github.com/user-attachments/assets/3a246806-4416-4a78-84d0-6a4071dce370)
 
 <p align="center">
   <a href="README.md">English</a> •
@@ -19,20 +18,42 @@
 
 </div>
 
-### 🌟 概要
+## 🌟 概要
 
-Thoriumブラウザプロジェクトのためのモダンでレスポンシブなランディングページです。SvelteとTailwindCSSで構築され、美しいアニメーションインターフェースと多言語サポートを特徴としています。
+Thorium Browserプロジェクトのための現代的でレスポンシブなランディングページです。SvelteとTailwindCSSで構築され、すべてのデバイスでシームレスなユーザー体験を提供し、美しいアニメーションインターフェースと包括的な多言語サポートを特徴としています。
 
-### ✨ 主な機能
+## 🎨 主な機能
 
-- 🎨 スムーズなアニメーションを備えたモダンなレスポンシブデザイン
-- 🌐 多言語サポート（英語、韓国語、日本語、中国語）
-- 🌙 システム設定と連動するダーク/ライトモード
-- ⚡ Svelteによる高いパフォーマンス
-- 🎯 SEO最適化
-- 📱 モバイルファースト
+### 🌐 幅広い言語サポート
+16以上の言語をすぐに利用できる状態で提供し、世界中のユーザーがアクセスできます：
 
-### 🚀 はじめ方
+![言語サポート](https://github.com/user-attachments/assets/c5730267-a96c-4c95-afbf-f00a231874bd)
+
+### 📱 レスポンシブなモバイル体験
+スムーズなアニメーションと直感的なナビゲーションを備えた、丁寧に作り込まれたモバイルインターフェース：
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4015e91f-9d20-41ba-a046-2aeb67fd66e1" width="250" alt="モバイルメニュー" />
+  <img src="https://github.com/user-attachments/assets/fbc60a6c-22d7-4bed-9fee-04ac8ba8c9db" width="250" alt="言語選択" />
+  <img src="https://github.com/user-attachments/assets/1736185a-6253-43a0-a493-e46c0db16eca" width="250" alt="ダークモード" />
+</div>
+
+### ✨ 特徴的な機能
+
+- 🎭 **シームレスなダーク/ライトモード**
+  - システム設定の検出
+  - スムーズなテーマ切り替え
+  
+- ⚡ **高速なパフォーマンス**
+  - Svelteによる最適な速度
+  - Viteを活用した開発体験
+  
+- 🎯 **本番環境対応**
+  - SEO最適化
+  - モバイルファースト
+  - 包括的なアクセシビリティ機能
+
+## 🚀 クイックスタート
 
 ```bash
 # リポジトリのクローン
@@ -49,27 +70,58 @@ npm run build
 ```
 
 <details>
-<summary>📚 詳細を見る</summary>
+<summary>📚 技術的な詳細</summary>
 
 ### 🛠 技術スタック
-- **フレームワーク:** Svelte
-- **スタイリング:** TailwindCSS
-- **アイコン:** Lucide Icons
-- **ビルドツール:** Vite
+
+- **フロントエンドフレームワーク:** Svelte
+- **スタイリングソリューション:** TailwindCSS
+- **アイコンライブラリ:** Lucide Icons
+- **ビルドシステム:** Vite
 - **言語:** TypeScript
 
-### 🤝 コントリビューション
-コントリビューションを歓迎します！[コントリビューションガイドライン](CONTRIBUTING.md)をご覧ください。
+### 📦 プロジェクト構造
 
-### 📝 ライセンス
-MITライセンス - 詳細は[LICENSE](LICENSE)ファイルをご覧ください。
+```
+thorium-browser-landing/
+├── src/
+│   ├── lib/
+│   │   └── i18n/          # 国際化
+│   ├── components/        # 再利用可能なコンポーネント
+│   └── styles/           # グローバルスタイル
+├── public/               # 静的アセット
+└── tests/               # テストスイート
+```
+
+### 🔧 設定
+
+- 完全にカスタマイズ可能なTailwindCSSテーマ
+- 包括的なTypeScript設定
+- 最適化されたViteビルド設定
 
 </details>
 
-<div align="center">
-  
-Thorium Browserコミュニティのために❤️を込めて作りました
+## 🤝 コントリビューション
 
-[バグを報告](https://github.com/yourusername/thorium-browser-landing/issues) • [機能を提案](https://github.com/yourusername/thorium-browser-landing/issues)
+以下のような貢献を歓迎します：
+
+- 🐛 バグ修正
+- ✨ 新機能
+- 🌍 翻訳
+- 📚 ドキュメント
+
+始めるには[コントリビューションガイドライン](CONTRIBUTING.md)をご覧ください。
+
+## 📝 ライセンス
+
+このプロジェクトはMITライセンスの下で提供されています - 詳細は[LICENSE](LICENSE)ファイルをご覧ください。
+
+<div align="center">
+
+---
+
+Thorium Browserコミュニティのために❤️を込めて作られました
+
+[バグを報告](https://github.com/sioaeko/thorium-browser-landing/issues) • [機能をリクエスト](https://github.com/sioaeko/thorium-browser-landing/issues)
 
 </div>
