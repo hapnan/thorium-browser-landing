@@ -2,7 +2,8 @@
 
 <div align="center">
   
-![Thorium Browser](https://images.unsplash.com/photo-1517292987719-0369a794ec0f?auto=format&fit=crop&q=80&w=1200)
+![Thorium Browser](https://github.com/user-attachments/assets/e23a53a7-80e6-4c77-8d81-d90c9ea11607)
+
 
 <p align="center">
   <a href="README.md">English</a> •
@@ -35,7 +36,7 @@ Thoriumブラウザプロジェクトのためのモダンでレスポンシブ�
 
 ```bash
 # リポジトリのクローン
-git clone https://github.com/yourusername/thorium-browser-landing.git
+git clone https://github.com/sioaeko/thorium-browser-landing.git
 
 # 依存関係のインストール
 npm install
