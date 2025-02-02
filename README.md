@@ -2,7 +2,7 @@
 
 <div align="center">
   
-![Thorium Browser](https://github.com/user-attachments/assets/c9dc5b5f-16e3-4020-bc7a-750c77d1df1a)
+![english_main](https://github.com/user-attachments/assets/3a246806-4416-4a78-84d0-6a4071dce370)
 
 
 <p align="center">
@@ -22,6 +22,11 @@
 ### 🌟 Overview
 
 A modern, responsive landing page for the Thorium Browser project, featuring a beautiful animated interface with multilingual support. Built with Svelte and TailwindCSS, this website delivers a seamless user experience across all devices.
+
+### 🏳️ 16+ Language Support
+
+![CleanShot 2025-02-02 at 15 08 46](https://github.com/user-attachments/assets/c5730267-a96c-4c95-afbf-f00a231874bd)
+
 
 ### ✨ Features
 
