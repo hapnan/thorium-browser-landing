@@ -4,7 +4,6 @@
   
 ![english_main](https://github.com/user-attachments/assets/3a246806-4416-4a78-84d0-6a4071dce370)
 
-
 <p align="center">
   <a href="README.md">English</a> •
   <a href="README.ko.md">한국어</a> •
@@ -19,25 +18,42 @@
 
 </div>
 
-### 🌟 Overview
+## 🌟 Overview
 
-A modern, responsive landing page for the Thorium Browser project, featuring a beautiful animated interface with multilingual support. Built with Svelte and TailwindCSS, this website delivers a seamless user experience across all devices.
+A modern, responsive landing page for the Thorium Browser project that delivers a seamless user experience across all devices. Built with Svelte and TailwindCSS, it features a beautiful animated interface with comprehensive multilingual support.
 
-### 🏳️ 16+ Language Support
+## 🎨 Key Features
 
-![CleanShot 2025-02-02 at 15 08 46](https://github.com/user-attachments/assets/c5730267-a96c-4c95-afbf-f00a231874bd)
+### 🌐 Extensive Language Support
+Supporting 16+ languages out of the box, making Thorium accessible to users worldwide:
 
+![Language Support](https://github.com/user-attachments/assets/c5730267-a96c-4c95-afbf-f00a231874bd)
 
-### ✨ Features
+### 📱 Responsive Mobile Experience
+Carefully crafted mobile interface with smooth animations and intuitive navigation:
 
-- 🎨 Modern and responsive design with smooth animations
-- 🌐 Multilingual support (English, Korean, Japanese, Chinese)
-- 🌙 Dark/Light mode toggle with system preference detection
-- ⚡ Lightning-fast performance with Svelte
-- 🎯 SEO optimized
-- 📱 Mobile-first approach
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/4015e91f-9d20-41ba-a046-2aeb67fd66e1" width="250" alt="Mobile Menu" />
+  <img src="https://github.com/user-attachments/assets/fbc60a6c-22d7-4bed-9fee-04ac8ba8c9db" width="250" alt="Language Selection" />
+  <img src="https://github.com/user-attachments/assets/1736185a-6253-43a0-a493-e46c0db16eca" width="250" alt="Dark Mode" />
+</div>
 
-### 🚀 Quick Start
+### ✨ Feature Highlights
+
+- 🎭 **Seamless Dark/Light Mode**
+  - System preference detection
+  - Smooth transitions between themes
+  
+- ⚡ **Lightning-Fast Performance**
+  - Built with Svelte for optimal speed
+  - Vite-powered development experience
+  
+- 🎯 **Production-Ready**
+  - SEO optimized
+  - Mobile-first approach
+  - Comprehensive accessibility features
+
+## 🚀 Quick Start
 
 ```bash
 # Clone the repository
@@ -54,27 +70,58 @@ npm run build
 ```
 
 <details>
-<summary>📚 View More Details</summary>
+<summary>📚 Technical Details</summary>
 
-### 🛠 Tech Stack
-- **Framework:** Svelte
-- **Styling:** TailwindCSS
-- **Icons:** Lucide Icons
-- **Build Tool:** Vite
+### 🛠 Technology Stack
+
+- **Frontend Framework:** Svelte
+- **Styling Solution:** TailwindCSS
+- **Icon Library:** Lucide Icons
+- **Build System:** Vite
 - **Language:** TypeScript
 
-### 🤝 Contributing
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md).
+### 📦 Project Structure
 
-### 📝 License
-MIT License - see the [LICENSE](LICENSE) file for details.
+```
+thorium-browser-landing/
+├── src/
+│   ├── lib/
+│   │   └── i18n/          # Internationalization
+│   ├── components/        # Reusable components
+│   └── styles/           # Global styles
+├── public/               # Static assets
+└── tests/               # Test suites
+```
+
+### 🔧 Configuration
+
+- Fully customizable TailwindCSS theme
+- Comprehensive TypeScript configuration
+- Optimized Vite build settings
 
 </details>
 
+## 🤝 Contributing
+
+We welcome contributions! Whether it's:
+
+- 🐛 Bug fixes
+- ✨ New features
+- 🌍 Translations
+- 📚 Documentation
+
+Check out our [Contributing Guidelines](CONTRIBUTING.md) to get started.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 <div align="center">
-  
+
+---
+
 Made with ❤️ for the Thorium Browser community
 
-[Report Bug](https://github.com/yourusername/thorium-browser-landing/issues) • [Request Feature](https://github.com/yourusername/thorium-browser-landing/issues)
+[Report Bug](https://github.com/sioaeko/thorium-browser-landing/issues) • [Request Feature](https://github.com/sioaeko/thorium-browser-landing/issues)
 
 </div>
