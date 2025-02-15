@@ -28,6 +28,12 @@
   let isHeaderVisible = true;
   let isLogoSpinning = false;
   let version = ""
+  let version_win = ""
+  let version_mac = ""
+  let version_android = ""
+  let version_raspi = ""
+  let version_win7 = ""
+  let downloads = [];
   
   onMount(() => {
     document.documentElement.classList.toggle('dark', isDarkMode);
@@ -39,6 +45,7 @@
       lastScrollY = currentScrollY;
     };
     getVersion()
+    getPlatformVersion()
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   });
@@ -47,6 +54,36 @@
     const response = await fetch('https://api.github.com/repos/Alex313031/Thorium/releases/latest');
     const data = await response.json();
     version = data.tag_name;
+  }
+
+  async function getPlatformVersion() {
+    const response_win = await fetch('https://api.github.com/repos/Alex313031/Thorium-Win/releases/latest');
+    const response_mac = await fetch('https://api.github.com/repos/Alex313031/Thorium-MacOS/releases/latest');
+    const response_android = await fetch('https://api.github.com/repos/Alex313031/Thorium-Android/releases/latest');
+    const response_raspi = await fetch('https://api.github.com/repos/Alex313031/Thorium-Raspi/releases/latest');
+    const response_win7 = await fetch('https://api.github.com/repos/Alex313031/thorium-legacy/releases/latest');
+
+    const data_win = await response_win.json();
+    const data_mac = await response_mac.json();
+    const data_android = await response_android.json();
+    const data_raspi = await response_raspi.json();
+    const data_win7 = await response_win7.json();
+
+    version_win = data_win.tag_name;
+    version_mac = data_mac.tag_name;
+    version_android = data_android.tag_name;
+    version_raspi = data_raspi.tag_name;
+    version_win7 = data_win7.tag_name;
+
+    downloads = [
+    { system: "Linux", icon: Terminal, size: "x64", url: "https://github.com/Alex313031/Thorium/releases", version: version },
+    { system: "Windows", icon: Globe, size: "x64", url: "https://github.com/Alex313031/Thorium-Win/releases", version: version_win },
+    { system: "MacOS", icon: Globe, size: "Universal", url: "https://github.com/Alex313031/Thorium-Mac/releases", version: version_mac },
+    { system: "Android", icon: MonitorSmartphone, size: "arm64", url: "https://github.com/Alex313031/Thorium-Android/releases", version: version_android },
+    { system: "Raspberry Pi", icon: Cpu, size: "arm64", url: "https://github.com/Alex313031/Thorium-Raspi/releases", version: version_raspi },
+    { system: "Windows 7", icon: Globe, size: "x64", url: "https://github.com/Alex313031/thorium-legacy/releases", version: version_win7 }
+  ];
+
   }
 
   const availableLanguages = [
@@ -91,13 +128,7 @@
     isLogoSpinning = !isLogoSpinning;
   }
 
-  const downloads = [
-    { system: "Linux", icon: Terminal, size: "x64", url: "https://github.com/Alex313031/Thorium/releases" },
-    { system: "Windows", icon: Globe, size: "x64", url: "https://github.com/Alex313031/Thorium-Win/releases" },
-    { system: "MacOS", icon: Globe, size: "Universal", url: "https://github.com/Alex313031/Thorium-Mac/releases" },
-    { system: "Android", icon: MonitorSmartphone, size: "arm64", url: "https://github.com/Alex313031/Thorium-Android/releases" },
-    { system: "Raspberry Pi", icon: Cpu, size: "arm64", url: "https://github.com/Alex313031/Thorium-Raspi/releases" }
-  ];
+  
 
   const features = [
     { icon: Zap, key: 'performance' },
@@ -398,7 +429,9 @@ sudo apt install thorium-browser</pre>
                 <div class="text-left">
                   <div class="font-semibold text-base md:text-lg">{download.system}</div>
                   <div class="text-xs md:text-sm text-cyan-300/90 dark:text-gray-300/90">{download.size}</div>
+                  <div class="text-xs md:text-sm text-cyan-300/90 dark:text-gray-300/90">{download.version}</div>
                 </div>
+                
               </a>
             {/each}
           </div>
