@@ -27,6 +27,7 @@
   let lastScrollY = 0;
   let isHeaderVisible = true;
   let isLogoSpinning = false;
+  let version = ""
   
   onMount(() => {
     document.documentElement.classList.toggle('dark', isDarkMode);
@@ -37,10 +38,16 @@
       isHeaderVisible = currentScrollY <= lastScrollY || currentScrollY < 50;
       lastScrollY = currentScrollY;
     };
-
+    getVersion()
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   });
+
+  async function getVersion() {
+    const response = await fetch('https://api.github.com/repos/Alex313031/Thorium/releases/latest');
+    const data = await response.json();
+    version = data.tag_name;
+  }
 
   const availableLanguages = [
     { code: 'en' as Language, name: 'English', flag: '🇺🇸' },
@@ -223,9 +230,10 @@
                 </a>
 
                 <div class="py-2 my-1 border-t border-white/10">
-                  <label class="text-sm text-gray-300 mb-2 block px-3">{t.nav.selectLanguage}</label>
+                  <label for="language-select" class="text-sm text-gray-300 mb-2 block px-3">{t.nav.selectLanguage}</label>
                   <div class="relative">
                     <select
+                      id="language-select"
                       class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50 appearance-none cursor-pointer transition-colors hover:bg-white/10"
                       value={$currentLanguage}
                       on:change={handleLanguageChange}
@@ -374,7 +382,7 @@ sudo apt install thorium-browser</pre>
         </h2>
         <div class="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-6 md:p-12 rounded-3xl border border-white/10">
           <p class="text-lg md:text-xl mb-8 md:mb-12 text-cyan-100">
-            {t.download.version}
+            {t.download.version}{version}
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {#each downloads as download}

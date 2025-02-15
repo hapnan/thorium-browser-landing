@@ -46,7 +46,7 @@ export const translations = {
     },
     download: {
       title: 'Download Thorium Browser',
-      version: 'Latest Version: v1.0.0'
+      version: 'Latest Version: '
     },
     footer: {
       patches: 'View Patches',
@@ -101,7 +101,7 @@ export const translations = {
     },
     download: {
       title: 'Thorium 브라우저 다운로드',
-      version: '최신 버전: v1.0.0'
+      version: '최신 버전: '
     },
     footer: {
       patches: '패치 목록 보기',
@@ -156,7 +156,7 @@ export const translations = {
     },
     download: {
       title: 'Thoriumブラウザのダウンロード',
-      version: '最新バージョン: v1.0.0'
+      version: '最新バージョン: '
     },
     footer: {
       patches: 'パッチ一覧を見る',
@@ -211,7 +211,7 @@ export const translations = {
     },
     download: {
       title: '下载Thorium浏览器',
-      version: '最新版本：v1.0.0'
+      version: '最新版本：'
     },
     footer: {
       patches: '查看补丁',
@@ -266,7 +266,7 @@ export const translations = {
     },
     download: {
       title: 'Descargar Thorium Browser',
-      version: 'Última Versión: v1.0.0'
+      version: 'Última Versión: '
     },
     footer: {
       patches: 'Ver Parches',
@@ -321,7 +321,7 @@ export const translations = {
     },
     download: {
       title: 'Télécharger Thorium Browser',
-      version: 'Dernière Version : v1.0.0'
+      version: 'Dernière Version : '
     },
     footer: {
       patches: 'Voir les Correctifs',
@@ -376,7 +376,7 @@ export const translations = {
     },
     download: {
       title: 'Thorium Browser Herunterladen',
-      version: 'Neueste Version: v1.0.0'
+      version: 'Neueste Version: '
     },
     footer: {
       patches: 'Patches Anzeigen',
@@ -431,7 +431,7 @@ export const translations = {
     },
     download: {
       title: 'Scarica Thorium Browser',
-      version: 'Ultima Versione: v1.0.0'
+      version: 'Ultima Versione: '
     },
     footer: {
       patches: 'Visualizza Patch',
@@ -486,7 +486,7 @@ export const translations = {
     },
     download: {
       title: 'Baixar Thorium Browser',
-      version: 'Última Versão: v1.0.0'
+      version: 'Última Versão: '
     },
     footer: {
       patches: 'Ver Patches',
@@ -541,7 +541,7 @@ export const translations = {
     },
     download: {
       title: 'Скачать Thorium Browser',
-      version: 'Последняя Версия: v1.0.0'
+      version: 'Последняя Версия: '
     },
     footer: {
       patches: 'Просмотр Патчей',
@@ -596,7 +596,7 @@ export const translations = {
     },
     download: {
       title: 'Thorium ब्राउज़र डाउनलोड करें',
-      version: 'नवीनतम संस्करण: v1.0.0'
+      version: 'नवीनतम संस्करण: '
     },
     footer: {
       patches: 'पैच देखें',
@@ -651,7 +651,7 @@ export const translations = {
     },
     download: {
       title: 'تحميل متصفح Thorium',
-      version: 'أحدث إصدار: v1.0.0'
+      version: 'أحدث إصدار: '
     },
     footer: {
       patches: 'عرض التصحيحات',
@@ -706,7 +706,7 @@ export const translations = {
     },
     download: {
       title: 'Thorium Browser\'ı İndir',
-      version: 'Son Sürüm: v1.0.0'
+      version: 'Son Sürüm: '
     },
     footer: {
       patches: 'Yamaları Görüntüle',
@@ -761,7 +761,7 @@ export const translations = {
     },
     download: {
       title: 'Tải Xuống Thorium Browser',
-      version: 'Phiên Bản Mới Nhất: v1.0.0'
+      version: 'Phiên Bản Mới Nhất: '
     },
     footer: {
       patches: 'Xem Bản Vá',
@@ -816,7 +816,7 @@ export const translations = {
     },
     download: {
       title: 'ดาวน์โหลด Thorium Browser',
-      version: 'เวอร์ชันล่าสุด: v1.0.0'
+      version: 'เวอร์ชันล่าสุด: '
     },
     footer: {
       patches: 'ดูแพตช์',
