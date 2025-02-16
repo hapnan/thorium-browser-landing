@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"
+  publish = "dist"  # Vite의 기본 빌드 출력 디렉토리는 dist입니다
+
+[build.environment]
+  NODE_VERSION = "18.0.0"  # 사용하시는 Node 버전으로 변경하세요 
