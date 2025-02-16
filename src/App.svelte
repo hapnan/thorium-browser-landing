@@ -27,6 +27,13 @@
   let lastScrollY = 0;
   let isHeaderVisible = true;
   let isLogoSpinning = false;
+  let version = ""
+  let version_win = ""
+  let version_mac = ""
+  let version_android = ""
+  let version_raspi = ""
+  let version_win7 = ""
+  let downloads = [];
   
   onMount(() => {
     document.documentElement.classList.toggle('dark', isDarkMode);
@@ -37,10 +44,47 @@
       isHeaderVisible = currentScrollY <= lastScrollY || currentScrollY < 50;
       lastScrollY = currentScrollY;
     };
-
+    getVersion()
+    getPlatformVersion()
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   });
+
+  async function getVersion() {
+    const response = await fetch('https://api.github.com/repos/Alex313031/Thorium/releases/latest');
+    const data = await response.json();
+    version = data.tag_name;
+  }
+
+  async function getPlatformVersion() {
+    const response_win = await fetch('https://api.github.com/repos/Alex313031/Thorium-Win/releases/latest');
+    const response_mac = await fetch('https://api.github.com/repos/Alex313031/Thorium-MacOS/releases/latest');
+    const response_android = await fetch('https://api.github.com/repos/Alex313031/Thorium-Android/releases/latest');
+    const response_raspi = await fetch('https://api.github.com/repos/Alex313031/Thorium-Raspi/releases/latest');
+    const response_win7 = await fetch('https://api.github.com/repos/Alex313031/thorium-legacy/releases/latest');
+
+    const data_win = await response_win.json();
+    const data_mac = await response_mac.json();
+    const data_android = await response_android.json();
+    const data_raspi = await response_raspi.json();
+    const data_win7 = await response_win7.json();
+
+    version_win = data_win.tag_name;
+    version_mac = data_mac.tag_name;
+    version_android = data_android.tag_name;
+    version_raspi = data_raspi.tag_name;
+    version_win7 = data_win7.tag_name;
+
+    downloads = [
+    { system: "Linux", icon: Terminal, size: "x64", url: "https://github.com/Alex313031/Thorium/releases", version: version },
+    { system: "Windows", icon: Globe, size: "x64", url: "https://github.com/Alex313031/Thorium-Win/releases", version: version_win },
+    { system: "MacOS", icon: Globe, size: "Universal", url: "https://github.com/Alex313031/Thorium-Mac/releases", version: version_mac },
+    { system: "Android", icon: MonitorSmartphone, size: "arm64", url: "https://github.com/Alex313031/Thorium-Android/releases", version: version_android },
+    { system: "Raspberry Pi", icon: Cpu, size: "arm64", url: "https://github.com/Alex313031/Thorium-Raspi/releases", version: version_raspi },
+    { system: "Windows 7", icon: Globe, size: "x64", url: "https://github.com/Alex313031/thorium-legacy/releases", version: version_win7 }
+  ];
+
+  }
 
   const availableLanguages = [
     { code: 'en' as Language, name: 'English', flag: '🇺🇸' },
@@ -84,13 +128,7 @@
     isLogoSpinning = !isLogoSpinning;
   }
 
-  const downloads = [
-    { system: "Linux", icon: Terminal, size: "x64", url: "https://github.com/Alex313031/Thorium/releases" },
-    { system: "Windows", icon: Globe, size: "x64", url: "https://github.com/Alex313031/Thorium-Win/releases" },
-    { system: "MacOS", icon: Globe, size: "Universal", url: "https://github.com/Alex313031/Thorium-Mac/releases" },
-    { system: "Android", icon: MonitorSmartphone, size: "arm64", url: "https://github.com/Alex313031/Thorium-Android/releases" },
-    { system: "Raspberry Pi", icon: Cpu, size: "arm64", url: "https://github.com/Alex313031/Thorium-Raspi/releases" }
-  ];
+  
 
   const features = [
     { icon: Zap, key: 'performance' },
@@ -223,9 +261,10 @@
                 </a>
 
                 <div class="py-2 my-1 border-t border-white/10">
-                  <label class="text-sm text-gray-300 mb-2 block px-3">{t.nav.selectLanguage}</label>
+                  <label for="language-select" class="text-sm text-gray-300 mb-2 block px-3">{t.nav.selectLanguage}</label>
                   <div class="relative">
                     <select
+                      id="language-select"
                       class="w-full bg-white/5 border border-white/10 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500/50 appearance-none cursor-pointer transition-colors hover:bg-white/10"
                       value={$currentLanguage}
                       on:change={handleLanguageChange}
@@ -374,7 +413,7 @@ sudo apt install thorium-browser</pre>
         </h2>
         <div class="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-6 md:p-12 rounded-3xl border border-white/10">
           <p class="text-lg md:text-xl mb-8 md:mb-12 text-cyan-100">
-            {t.download.version}
+            {t.download.version}{version}
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             {#each downloads as download}
@@ -390,7 +429,9 @@ sudo apt install thorium-browser</pre>
                 <div class="text-left">
                   <div class="font-semibold text-base md:text-lg">{download.system}</div>
                   <div class="text-xs md:text-sm text-cyan-300/90 dark:text-gray-300/90">{download.size}</div>
+                  <div class="text-xs md:text-sm text-cyan-300/90 dark:text-gray-300/90">{download.version}</div>
                 </div>
+                
               </a>
             {/each}
           </div>
