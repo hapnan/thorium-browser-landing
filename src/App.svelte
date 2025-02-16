@@ -33,7 +33,7 @@
   let version_android = ""
   let version_raspi = ""
   let version_win7 = ""
-  let downloads = [];
+  let downloads: any[] = [];
   
   onMount(() => {
     document.documentElement.classList.toggle('dark', isDarkMode);
@@ -383,14 +383,14 @@
     </section>
 
     <!-- Installation Section -->
-    <section class="container mx-auto px-4 py-16 md:py-32">
-      <div class="max-w-3xl mx-auto">
+    <section class="container mx-auto">
+      <div class="max-w-3xl w-3xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-teal-200">
-          {t.installation.title}
+          {t.installation.linux.title}
         </h2>
         <div class="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-6 md:p-8 rounded-3xl border border-white/10">
           <p class="text-base md:text-lg mb-6 text-cyan-100">
-            {t.installation.description}
+            {t.installation.linux.description}
           </p>
           <div class="overflow-x-auto">
             <pre class="bg-black/30 p-4 md:p-6 rounded-2xl text-sm md:text-base mb-4 font-mono border border-cyan-500/20 whitespace-pre-wrap break-words">
@@ -400,6 +400,27 @@ http://dl.thorium.rocks/debian/dists/stable/thorium.list && \
 sudo apt update
 
 sudo apt install thorium-browser</pre>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-3xl mx-auto mt-3">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-300 to-teal-200">
+          {t.installation.windows.title}
+        </h2>
+        <div class="flex flex-col bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-6 md:p-8 rounded-3xl border border-white/10">
+          <p class="text-base md:text-lg mb-6 text-cyan-100">
+            {t.installation.windows.description}
+          </p>
+          <div class="overflow-x-auto">
+            <label class="text-cyan-100" for="winget">Winget</label>
+            <pre id="winget" class="bg-black/30 p-4 md:p-6 rounded-2xl text-sm md:text-base mb-4 font-mono border border-cyan-500/20 whitespace-pre-wrap break-words">
+winget install --id=Alex313031.Thorium  -e</pre>
+          </div>
+          <span class="max-w-3xl mx-auto">OR</span>
+          <div class="overflow-x-auto">
+            <label class="text-cyan-100" for="winget">Chocolatey</label>
+            <pre id="winget" class="bg-black/30 p-4 md:p-6 rounded-2xl text-sm md:text-base mb-4 font-mono border border-cyan-500/20 whitespace-pre-wrap break-words">
+choco install thorium</pre>
           </div>
         </div>
       </div>

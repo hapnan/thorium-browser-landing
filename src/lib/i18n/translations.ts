@@ -41,8 +41,14 @@ export const translations = {
       }
     },
     installation: {
+      linux : {
       title: 'Linux Installation',
       description: 'Install Thorium Browser with the following commands:'
+    },
+      windows : {
+      title: 'Windows Installation',
+      description: 'Download the executable from website or use one of the package managers below'
+    }
     },
     download: {
       title: 'Download Thorium Browser',
@@ -96,8 +102,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'Linux 설치 방법',
       description: '다음 명령어로 Thorium 브라우저를 설치하세요:'
+    },
+      windows : {
+      title: 'Windows 설치 방법',
+      description: '웹사이트에서 실행 파일을 다운로드하거나 아래 패키지 관리자 중 하나를 사용하세요.'
+    }
     },
     download: {
       title: 'Thorium 브라우저 다운로드',
@@ -151,8 +163,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'Linuxインストール方法',
       description: '以下のコマンドでThoriumブラウザをインストールしてください：'
+    },
+      windows : {
+      title: 'Windowsインストール方法',
+      description: 'ウェブサイトから実行ファイルをダウンロードするか、以下のパッケージ・マネージャーを使用してください。'
+    }
     },
     download: {
       title: 'Thoriumブラウザのダウンロード',
@@ -206,8 +224,14 @@ export const translations = {
       }
     },
     installation: {
+      linux : {
       title: 'Linux安装方法',
       description: '使用以下命令安装Thorium浏览器：'
+    },
+    windows : {
+      title: 'Windows安装方法',
+      description: '从网站下载可执行文件，或使用以下软件包管理器之一'
+    }
     },
     download: {
       title: '下载Thorium浏览器',
@@ -261,8 +285,14 @@ export const translations = {
       }
     },
     installation: {
+      linux : { 
       title: 'Instalación en Linux',
       description: 'Instala Thorium Browser con los siguientes comandos:'
+    },
+    windows : {
+      title: 'Instalación en Windows',
+      description: 'descargue el ejecutable del sitio web o utilice uno de los siguientes gestores de paquetes'
+    }
     },
     download: {
       title: 'Descargar Thorium Browser',
@@ -316,8 +346,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'Installation Linux',
       description: 'Installez Thorium Browser avec les commandes suivantes :'
+    },
+      windows : {
+      title: 'Installation Windows',
+      description: 'télécharger l\'exécutable depuis le site web ou utiliser l\'un des gestionnaires de paquets ci-dessous'
+    }
     },
     download: {
       title: 'Télécharger Thorium Browser',
@@ -371,8 +407,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'Linux-Installation',
       description: 'Installieren Sie Thorium Browser mit den folgenden Befehlen:'
+    },
+      windows : {
+      title: 'Windows-Installation',
+      description: 'download het uitvoerbare bestand van de website of gebruik een van de onderstaande pakketbeheerders'
+    }
     },
     download: {
       title: 'Thorium Browser Herunterladen',
@@ -426,8 +468,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'Installazione Linux',
       description: 'Installa Thorium Browser con i seguenti comandi:'
+    },
+      windows : {
+      title: 'Installazione Windows',
+      description: 'scaricate l\'eseguibile dal sito web o utilizzate uno dei gestori di pacchetti sotto riportati'
+    }
     },
     download: {
       title: 'Scarica Thorium Browser',
@@ -481,8 +529,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'Instalação Linux',
       description: 'Instale o Thorium Browser com os seguintes comandos:'
+    },
+      windows : {
+      title: 'Instalação Windows',
+      description: 'descarregue o executável do sítio Web ou utilize um dos gestores de pacotes abaixo'
+    }
     },
     download: {
       title: 'Baixar Thorium Browser',
@@ -536,8 +590,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'Установка на Linux',
       description: 'Установите Thorium Browser с помощью следующих команд:'
+    },
+      windows : {
+      title: 'Установка на Windows',
+      description: 'загрузите исполняемый файл с веб-сайта или используйте один из менеджеров пакетов, приведенных ниже'
+    }
     },
     download: {
       title: 'Скачать Thorium Browser',
@@ -591,8 +651,14 @@ export const translations = {
       }
     },
     installation: {
+      linux:{
       title: 'Linux इंस्टॉलेशन',
       description: 'निम्नलिखित कमांड से Thorium ब्राउज़र इंस्टॉल करें:'
+    },
+      windows : {
+      title: 'Windows इंस्टॉलेशन',
+      description: 'वेबसाइट से निष्पादन योग्य डाउनलोड करें या नीचे दिए गए पैकेज प्रबंधकों में से किसी एक का उपयोग करें'
+    }
     },
     download: {
       title: 'Thorium ब्राउज़र डाउनलोड करें',
@@ -646,8 +712,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'تثبيت Linux',
       description: 'قم بتثبيت متصفح Thorium باستخدام الأوامر التالية:'
+    },
+      windows : {
+      title: 'تثبيت Windows',
+      description: 'قم بتنزيل الملف القابل للتنفيذ من موقع الويب أو استخدم أحد مديري الحزم أدناه'
+    }
     },
     download: {
       title: 'تحميل متصفح Thorium',
@@ -701,8 +773,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'Linux Kurulumu',
       description: 'Thorium Browser\'ı aşağıdaki komutlarla kurun:'
+    },
+      windows : {
+      title: 'Windows Kurulumu',
+      description: 'çalıştırılabilir dosyayı web sitesinden indirin veya aşağıdaki paket yöneticilerinden birini kullanın'
+    }
     },
     download: {
       title: 'Thorium Browser\'ı İndir',
@@ -756,8 +834,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'Cài Đặt Linux',
       description: 'Cài đặt Thorium Browser với các lệnh sau:'
+    },
+      windows : {
+      title: 'Cài Đặt Windows',
+      description: 'tải xuống tệp thực thi từ trang web hoặc sử dụng một trong các trình quản lý gói bên dưới'
+    }
     },
     download: {
       title: 'Tải Xuống Thorium Browser',
@@ -811,8 +895,14 @@ export const translations = {
       }
     },
     installation: {
+      linux :{
       title: 'การติดตั้งบน Linux',
       description: 'ติดตั้ง Thorium Browser ด้วยคำสั่งต่อไปนี้:'
+    },
+      windows : {
+      title: 'การติดตั้งบน Windows',
+      description: 'ดาวน์โหลดไฟล์ปฏิบัติการจากเว็บไซต์หรือใช้ตัวจัดการแพ็คเกจตัวใดตัวหนึ่งด้านล่าง'
+    }
     },
     download: {
       title: 'ดาวน์โหลด Thorium Browser',
