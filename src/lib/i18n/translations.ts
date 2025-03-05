@@ -426,6 +426,67 @@ export const translations = {
       copyright: '© 2024 Thorium Browser. Alle Rechte vorbehalten.'
     }
   },
+  id: {
+    nav: {
+      features: 'Fitur',
+      download: 'Unduh',
+      selectLanguage: 'Pilih bahasa',
+      lightMode: 'Tema terang',
+      darkMode: 'Tema gelap'
+    },
+    hero: {
+      title: 'Penjelajan Web yang lebih Cepat dan Aman',
+      subtitle: 'Thorium Browser adalah browser berbasis Chromium berperforma tinggi dan menawarkan optimisasi kecepatan dan peningkatan keamanan.',
+      downloadButton: 'Unduh sekarang',
+      sourceCode: 'Sumber kode',
+    },
+    features: {
+      title: 'Fitur kunci',
+      performance: {
+        title: 'Performa tinggi',
+        description: '8-38% peningkatan performa dari Chromium vanilla dengan optimisasi SSE4.2, AVX, AES, and LLVM LOOP.'
+      },
+      security: {
+        title: 'Peningkatan keamanan',
+        description: 'Linkungan penjelajan web yang aman dengan teknologi keamanan terkini dan pengaturan privasi yang ditingkatkan'
+      },
+      chromium: {
+        title: 'Berbasis Chromium',
+        description: 'Browser yang cepat dan kompatibel berbasis dari mesin Chromium yang stabil'
+      },
+      ui: {
+        title: 'UI Modern',
+        description: 'Desain yang bersih dan intuitif dengan antarmuka yang ramah-pengguna'
+      },
+      platform: {
+        title: 'Dukungan Multi-Platform',
+        description: 'Didukung di berbagai platform termasuk Linux, Windows, MacOS, Android, dan Raspberry Pi.'
+      },
+      optimization: {
+        title: 'Optimisasi Performa',
+        description: 'Berbagai optimisasi kompiler termasuk CFLAGS, LDFLAGS, dan thinLTO'
+      }
+    },
+    installation: {
+      linux : {
+      title: 'Instalasi Linux',
+      description: 'Install Thorium Browser dengan perintah berikut:'
+    },
+      windows : {
+      title: 'Instalasi Windows',
+      description: 'Unduh file executable dari website atau gunakan salah satu dari package manager di bawah ini'
+    }
+    },
+    download: {
+      title: 'Download Thorium Browser',
+      version: 'Versi terbaru: '
+    },
+    footer: {
+      patches: 'Lihat patch',
+      issues: 'Pelacak masalah',
+      copyright: '© 2024 Thorium Browser. Hak cipta dilindungi undang-undang.'
+    }
+  },
   it: {
     nav: {
       features: 'Funzionalità',
