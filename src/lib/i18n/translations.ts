@@ -461,7 +461,7 @@ export const translations = {
       platform: {
         title: 'Dukungan Multi-Platform',
         description: 'Didukung di berbagai platform termasuk Linux, Windows, MacOS, Android, dan Raspberry Pi.'
-      }
+      },
       optimization: {
         title: 'Optimisasi Performa',
         description: 'Berbagai optimisasi kompiler termasuk CFLAGS, LDFLAGS, dan thinLTO'
